@@ -2,8 +2,6 @@ var t;
 var myText = 'click to pause/play, press r to reset canvas, hit enter to save!';
 
 function setup() {
-  //var wWidth=windowWidth;
-  //var wHeight=windowHeight;
   const canvas = createCanvas(800, 800, SVG);
   stroke(10, 100);
   noFill();
@@ -20,14 +18,13 @@ push();
   text(myText, windowWidth/2, 0.9*windowHeight);
 pop();
 noFill();
-// push();
-// stroke(255, 102, 0);
-// curve(5, 26, 5, 26, 73, 24, 73, 61);
-// stroke(0);
-// curve(5, 26, 73, 24, 73, 61, 15, 65);
-// stroke(255, 102, 0);
-// curve(73, 24, 73, 61, 15, 65, 15, 65);
-//  pop();       
+stroke(255, 102, 0);
+curve(5, 26, 5, 26, 73, 24, 73, 61);
+stroke(0);
+curve(5, 26, 73, 24, 73, 61, 15, 65);
+stroke(255, 102, 0);
+curve(73, 24, 73, 61, 15, 65, 15, 65);
+        
 //curves generating
   var x1 = width  * noise(t + 10);
   var x2 = mouseX * noise(t + 20);
