@@ -18,12 +18,12 @@ push();
   text(myText, windowWidth/2, 0.9*windowHeight);
 pop();
 noFill();
-stroke(255, 102, 0);
-curve(5, 26, 5, 26, 73, 24, 73, 61);
-stroke(0);
-curve(5, 26, 73, 24, 73, 61, 15, 65);
-stroke(255, 102, 0);
-curve(73, 24, 73, 61, 15, 65, 15, 65);
+// stroke(255, 102, 0);
+// curve(5, 26, 5, 26, 73, 24, 73, 61);
+// stroke(0);
+// curve(5, 26, 73, 24, 73, 61, 15, 65);
+// stroke(255, 102, 0);
+// curve(73, 24, 73, 61, 15, 65, 15, 65);
         
 //curves generating
   var x1 = width  * noise(t + 10);
