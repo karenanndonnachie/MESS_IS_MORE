@@ -2,7 +2,9 @@ var t;
 var myText = 'click to pause/play, press r to reset canvas, hit enter to save!';
 
 function setup() {
-  const canvas = createCanvas(windowWidth, windowHeight, SVG);
+  var wWidth=windowWidth;
+  var wHeight=windowHeight;
+  const canvas = createCanvas(wWidth, wHeight, SVG);
   stroke(10, 100);
   noFill();
   t = 0;
