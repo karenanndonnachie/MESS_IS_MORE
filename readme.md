@@ -3,6 +3,29 @@
 * P5js snippets & examples
 * Gcode tools etc
 * Drawing machines builds & docs
+
+# Essential Software
+To prepare to design and draw with some more advanced drawing machines and robots, download and install the following (open-source and free) software.
+
+## Inkscape
+
+This is an open-source vector illustration program, not unlike Adobe Illustrator. The main difference is that it can be easily modified for specialised use, such as making drawings and type for drawing machines! Please note this is open-source and free software. <br/>
+https://inkscape.org/release/inkscape-1.2.1/
+
+## G-code tools
+
+G-code = Geometric code. This is how we get our laptops to "talk" with the drawing machines. Luckily, Inkscape (above) already comes with some neat G-code tools in the extensions menu. Andy will demonstrate how these tools work, and give you a specific walk-through for preparing drawings and type for conversion into G-code!
+No link needed (it's already packaged in Inkscape!)
+
+## GSender
+
+This little piece of software helps you send the G-code to the machine. There are many G-code senders out there, but we've found this one works fairly well. It doesn't do much other than connect to a drawing machine (or other CNC device like a 3d printer) and send packets of G-code.<br/>
+https://sienci.com/gsender/
+
+## Processing
+
+Link here for your convenience (e.g. if you need to reinstall).
+https://processing.org/download
 _____________________________________
 # If you want to build your own Github (maybe you want a web site of your work?)
 
