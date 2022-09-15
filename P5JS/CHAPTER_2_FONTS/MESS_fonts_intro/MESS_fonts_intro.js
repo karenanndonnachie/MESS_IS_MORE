@@ -3,7 +3,7 @@ var font1, font2, font3;
 function preload() {
   font1 = loadFont('data/inconsolata.otf');
   font2 = loadFont('data/DIN.otf');
-  font3 = loadFont('data/coldera.otf');
+  //font3 = loadFont('data/coldera.otf');
 }
 
 function setup() {
