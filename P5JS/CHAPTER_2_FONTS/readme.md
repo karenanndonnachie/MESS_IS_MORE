@@ -10,7 +10,7 @@
 * write your text to the page with `text('your text', x, y)`
 
 ## Examples in this folder:
-* [Spinning Text](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CH2_FONTS/SpinningText)
-* [TextSimpleKerning](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CH2_FONTS/TextSimpleKerning/)
-* [chompchomp](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CH2_FONTS/chompchomp)
-* [ABC_random](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CH2_FONTS/ABC_random)
+* [Spinning Text](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CHAPTER_2_FONTS/SpinningText)
+* [TextSimpleKerning](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CHAPTER_2_FONTS/TextSimpleKerning/)
+* [chompchomp](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CHAPTER_2_FONTS/chompchomp)
+* [ABC_random](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CHAPTER_2_FONTS/ABC_random)
