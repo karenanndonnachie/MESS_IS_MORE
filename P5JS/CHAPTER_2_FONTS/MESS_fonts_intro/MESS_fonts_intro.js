@@ -27,5 +27,5 @@ function draw() {
   text ('DIN', 300,100);
   textSize(32);
   textFont(font3);
-  text ('COLDERA', 300,250);
+  text ('FONTYFONTS', 300,250);
 }
