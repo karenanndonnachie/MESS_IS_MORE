@@ -2,6 +2,7 @@
 ## Chapter 1: in the beginning...
 # P5js (the web version of Processing)
 This folder will contain snippets from Processing workshops and tutorials.<br/>
+eg. https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/MESS_introTo_P5/ 
 Some simple starter instructions below.
 
 ## Processing START HERE:
