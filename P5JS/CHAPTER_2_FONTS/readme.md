@@ -10,8 +10,7 @@
 * write your text to the page with `text('your text', x, y)`
 
 ## Examples in this folder:
-* [Intro to fonts](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CHAPTER_2_FONTS/MESS_fonts_intro)
-* [Spinning Text](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CHAPTER_2_FONTS/SpinningText)
-* [TextSimpleKerning](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CHAPTER_2_FONTS/TextSimpleKerning/)
-* [chompchomp](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CHAPTER_2_FONTS/chompchomp)
-* [ABC_random](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CHAPTER_2_FONTS/ABC_random)
+* [Intro to fonts](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CHAPTER_2_FONTS/MESS_fonts_intro) - preload a font, call it, display it.
+* [Spinning Text](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CHAPTER_2_FONTS/SpinningText) - all of the above + animate (rotate) according to mouse position
+* [TextSimpleKerning](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CHAPTER_2_FONTS/TextSimpleKerning/) - use interactive input to display text as letters with individual spacing.
+* [chompchomp](https://karenanndonnachie.github.io/MESS_IS_MORE/P5JS/CHAPTER_2_FONTS/chompchomp) Display letters at random all over the screen.
