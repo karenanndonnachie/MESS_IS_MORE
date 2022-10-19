@@ -24,7 +24,9 @@ function mousePressed(){
 function start(){
   if (started==false){
   userStartAudio();
-  started=true;}
+  started=true;
+  vidplay();
+  }
   }
 function setup() {
   createCanvas(windowWidth, windowHeight);
