@@ -44,7 +44,7 @@ function setup() {
   fft.setInput(mic);
   vol = mic.getLevel();
   
-  start();
+  //start();
   prevTreb=createVector(0,0);
   prevBass=createVector(0,0);
   prevMid=createVector(0,0);
