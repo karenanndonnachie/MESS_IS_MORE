@@ -21,6 +21,10 @@
   #vidcontainer{width:100vw;height:100vh;overflow:hidden;}
   #video{width:100%;height:auto;overflow:hidden;}
   </style>
+  <script>
+  function vidplay(){
+ document.getElementById("vid").play();
+  }  </script>
 </head>
 
 <body>
@@ -29,7 +33,7 @@
 <div>
 <div id="vidcontainer">
 <!-- The video -->
-<video autoplay loop style="width: width="1760" height="990">
+<video id="vid" autoplay loop style="width: width="1760" height="990">
   <source src="assets/Alright_Edited_VHS.mp4" type="video/mp4">
 </video>
 </div>
