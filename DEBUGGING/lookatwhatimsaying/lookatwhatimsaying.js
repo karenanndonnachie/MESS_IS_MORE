@@ -18,9 +18,13 @@ var numcolors1 = 5;
 var webcam; // id tag for webcam page
 
 var capture;
+function mousePressed(){
+  start();
+}
 function start(){
+  if (started==false){
   userStartAudio();
-  started=true;
+  started=true;}
   }
 function setup() {
   createCanvas(windowWidth, windowHeight);
