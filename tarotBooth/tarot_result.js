@@ -1,6 +1,6 @@
 //variable of total number of images without having to manually change the numbers
 var totImages=78;
-
+var state="read";
 function preload(){
 //display of the images and its range from 1-78
   let rand1=int(random(1,totImages))
@@ -25,6 +25,11 @@ function preload(){
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
+function printReady(){
+  resizeCanvas(384, 2000);
+  pixelDensity(1);
+  state="print";
+}
 
 function setup() {
 //basic page set up and where the text will look and be
@@ -44,6 +49,7 @@ function setup() {
 //print button next to the title
 button2 = createButton('receipt' + '?');
   button2.position(100, 20);
+  button2.mousePressed(printReady);
  
 //change image sizes
   img.resize (200,300);
@@ -55,12 +61,20 @@ button2 = createButton('receipt' + '?');
 
 function draw() {
 //title of the screen
-  text('You have been read', width/2, 100);
-
   
+
+ if (state !=="print"){ 
+   text('You have been read', width/2, 100);
 //the images and their placement on the screen
 image(img,width/6, height/3);
     image(img2,width/2.4, height/3);
       image(img3,width-width/3, height/3);
-        
+ } 
+  else {
+    text('Tarot Booth', width/2, 20);
+    background(255);
+    image(img,0, 20);
+    image(img2,0, 680);
+      image(img3,0, 1020);
+  }
 }
