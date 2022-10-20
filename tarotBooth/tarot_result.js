@@ -40,6 +40,10 @@ function setup() {
   button = createButton ('nope' + '!');
   button.position (20,20);
   button.mousePressed(home);
+  
+//print button next to the title
+button2 = createButton('receipt' + '?');
+  button2.position(100, 20);
  
 //change image sizes
   img.resize (200,300);
@@ -53,9 +57,6 @@ function draw() {
 //title of the screen
   text('You have been read', width/2, 100);
 
-//print button next to the title
-button = createButton('receipt' + '?');
-  button.position(100, 20);
   
 //the images and their placement on the screen
 image(img,width/6, height/3);
