@@ -26,19 +26,16 @@
   function vidplay(){
  document.getElementById("video").play();
   }  
-  var video = document.getElementById('video');
+ var video = document.querySelector("#video");
 
 if (navigator.mediaDevices.getUserMedia) {
-  var successCallback = function(stream) {
-    video.srcObject = stream;
-  };
-  var errorCallback = function(error) {
-    console.log(error);
-  };
-  navigator.mediaDevices.getUserMedia({
-    audio: false,
-    video: { facingMode: { ideal: 'environment' } } // prefer rear-facing camera
-  }).then(successCallback, errorCallback);
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+    })
+    .catch(function (err0r) {
+      console.log("Something went wrong!");
+    });
 }
 </script>
 </head>
