@@ -63,7 +63,7 @@ function draw() {
 //title of the screen
   
 
- if (state !=="print"){ 
+ if (state=="read"){ 
    text('You have been read', width/2, 100);
 //the images and their placement on the screen
 image(img,width/6, height/3);
