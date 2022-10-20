@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.sound.min.js"></script>
+  <script language="javascript" type="text/javascript" src="p5js-temp-lookatwhatimsaying12283780206657247.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+
+  <!-- This line removes any default padding and style.
+       You might only need one of these values set. -->
+  <style> body { padding: 0; margin: 0; }  
+  canvas{position:absolute;top:0;left:0;z-index:10;}
+  button{z-index:11;}
+  #vidcontainer{width:100vw;height:100vh;overflow:hidden;}
+  #video{width:100%;height:auto;overflow:hidden;}
+  </style>
+  <script>
+  function vidplay(){
+ document.getElementById("vid").play();
+  }  
+  var video = document.getElementById('video');
+
+if (navigator.mediaDevices.getUserMedia) {
+  var successCallback = function(stream) {
+    video.srcObject = stream;
+  };
+  var errorCallback = function(error) {
+    console.log(error);
+  };
+  navigator.mediaDevices.getUserMedia({
+    audio: false,
+    video: { facingMode: { ideal: 'environment' } } // prefer rear-facing camera
+  }).then(successCallback, errorCallback);
+}
+</script>
+</head>
+
+<body>
+
+  
+<div>
+<div id="vidcontainer" onClick="vidplay();">
+<!-- The video -->
+<video id="video" autoplay="true"></video>
+</div>
+</div>
+
+</body>
+</html>
