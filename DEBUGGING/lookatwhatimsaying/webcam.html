@@ -23,6 +23,18 @@
   #video{width:100%;height:auto;overflow:hidden;}
   </style>
 
+
+</head>
+
+<body>
+  <button id="startBtn">Start</button>
+  
+<div>
+  <div id="vidcontainer" ><button id="startBtn">start</button>
+<!-- The video -->
+<video id="video" autoplay="true"></video>
+</div>
+</div>
 <script>
 const startBtn = document.getElementById('startBtn');
 startBtn.onclick = async () => {
@@ -45,17 +57,5 @@ startBtn.onclick = async () => {
   }
 };
 </script>
-</head>
-
-<body>
-  <button id="startBtn">Start</button>
-  
-<div>
-  <div id="vidcontainer" ><button id="startBtn">start</button>
-<!-- The video -->
-<video id="video" autoplay="true"></video>
-</div>
-</div>
-
 </body>
 </html>
