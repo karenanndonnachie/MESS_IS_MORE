@@ -22,29 +22,36 @@
   #vidcontainer{width:100vw;height:100vh;overflow:hidden;}
   #video{width:100%;height:auto;overflow:hidden;}
   </style>
-  <script>
-  function vidplay(){
- document.getElementById("video").play();
-  }  
- var video = document.querySelector("#video");
 
-if (navigator.mediaDevices.getUserMedia) {
-  navigator.mediaDevices.getUserMedia({ video: true })
-    .then(function (stream) {
-      video.srcObject = stream;
-    })
-    .catch(function (err0r) {
-      console.log("Something went wrong!");
-    });
-}
+<script>
+const startBtn = document.getElementById('startBtn');
+startBtn.onclick = async () => {
+  try {
+    startBtn.disabled = true;
+    const constraints = {
+      audio: true,
+      video: true
+    };
+
+    const stream = await navigator.mediaDevices.getUserMedia(constraints);
+
+    for (const track of stream.getTracks()) {
+      track.onended = () => {
+        startBtn.disabled = stream.getTracks().some((t) => t.readyState == 'live');
+      };
+    }
+  } catch (err) {
+    console.error(err);
+  }
+};
 </script>
 </head>
 
 <body>
-
+  <button id="startBtn">Start</button>
   
 <div>
-<div id="vidcontainer" onClick="vidplay();">
+  <div id="vidcontainer" onClick="vidplay();"><button id="startBtn">start</button>
 <!-- The video -->
 <video id="video" autoplay="true"></video>
 </div>
