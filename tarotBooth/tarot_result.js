@@ -71,11 +71,13 @@ image(img,width/6, height/3);
       image(img3,width-width/3, height/3);
  } 
   else {
-    text('Tarot Booth', width/2, 20);
+   // text('Tarot Booth', width/2, 20);
     background(255);
-    image(img,img.width-width/2, 20);
-    image(img2,img2.width-width/2, img.height+40);
-      image(img3,img3.width-width/2, img.height+img2.height+40);
+    image(img,img.width-width/2, 40);
+    image(img2,img2.width-width/2, img.height+80);
+      image(img3,img3.width-width/2, img.height+img2.height+120);
+    button.remove();
+    button2.remove();
   }
  
 }
