@@ -73,8 +73,14 @@ image(img,width/6, height/3);
   else {
     text('Tarot Booth', width/2, 20);
     background(255);
-    image(img,0, 20);
-    image(img2,0, 680);
-      image(img3,0, 1020);
+    image(img,img.width-width/2, 20);
+    image(img2,img2.width-width/2, img.height+40);
+      image(img3,img3.width-width/2, img.height+img2.height+40);
+  }
+ 
+}
+function keyPressed(){
+  if (key==" "){
+    saveFrames('tarotbooth","jpg",1,1);
   }
 }
