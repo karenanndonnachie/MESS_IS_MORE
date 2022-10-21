@@ -81,6 +81,6 @@ image(img,width/6, height/3);
 }
 function keyPressed(){
   if (key==" "){
-    saveFrames('tarotbooth","jpg",1,1);
+    saveFrames('tarotbooth','jpg',1,1);
   }
 }
